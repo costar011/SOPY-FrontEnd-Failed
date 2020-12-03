@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HeaderWrapper = styled.div`
   width: 100%;
-  height: 70px;
+  height: 75px;
   background-color: ${(props) => props.theme.mainThemeColor};
   color: ${(props) => props.theme.whiteColor};
   box-shadow: ${(props) => props.theme.boxShadow};
@@ -45,13 +45,13 @@ const Header = ({ history }) => {
 
   return (
     <HeaderWrapper>
-      <InnerWrapper width={`200px`}></InnerWrapper>
+      <InnerWrapper width={`250px`}></InnerWrapper>
       <InnerWrapper>
         <ActionSpan onClick={() => moveLinkHandler("/")}>
           <Link to="/"> LOGO</Link>
         </ActionSpan>
       </InnerWrapper>
-      <InnerWrapper width={`200px`}>
+      <InnerWrapper width={`250px`}>
         <ActionSpan onClick={() => moveLinkHandler("/signIn")}>
           SING IN
         </ActionSpan>

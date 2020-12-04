@@ -11,6 +11,15 @@ const Text = styled.div`
   margin: 10px;
 `;
 
+const BarWrapper = styled.div`
+  width: 1350px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: ${(props) => props.theme.subThemeColor};
+  box-shadow: ${(props) => props.theme.boxShadow};
+  margin: 30px 0px;
+`;
+
 const MM00Presenter = () => {
   return <Wrapper></Wrapper>;
 };

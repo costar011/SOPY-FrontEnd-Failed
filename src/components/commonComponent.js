@@ -11,3 +11,20 @@ export const Wrapper = styled.div`
   align-items: ${(props) => props.al || `center`};
   justify-content: ${(props) => props.ju || `center`};
 `;
+
+export const ImageBox = styled.div`
+  width: ${(props) => props.width || `100%`};
+  height: ${(props) => props.height || `100%`};
+  margin: ${(props) => props.margin || ``};
+  padding: ${(props) => props.padding || ``};
+
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: ${(props) => props.theme.boxShadow};
+    opacity: 0.5;
+  }
+`;

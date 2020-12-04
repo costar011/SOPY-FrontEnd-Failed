@@ -20,8 +20,17 @@ const BarWrapper = styled.div`
   margin: 30px 0px;
 `;
 
+const WrapWrapper = styled(Wrapper)`
+  width: 1350px;
+  flex-wrap: wrap; // width가 꽉 차면 자동으로 내려주는 녀석이다.
+`;
+
 const MM00Presenter = () => {
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <Wrapper width={`500px`} height={`30px`} dr={`row`}></Wrapper>
+    </Wrapper>
+  );
 };
 
 export default MM00Presenter;

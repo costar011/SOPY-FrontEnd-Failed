@@ -28,7 +28,9 @@ const WrapWrapper = styled(Wrapper)`
 const MM00Presenter = () => {
   return (
     <Wrapper>
-      <Wrapper width={`500px`} height={`30px`} dr={`row`}></Wrapper>
+      <Wrapper width={`500px`} height={`30px`} dr={`row`}>
+        <Wrapper al={`felx-end`} padding={`25px`}></Wrapper>
+      </Wrapper>
     </Wrapper>
   );
 };

@@ -25,8 +25,17 @@ const FooterAreaContent = styled.div`
   padding: 25px;
 `;
 
+const FooterWrapper = styled.div`
+  width: ${(props) => props.width};
+  height: ${(props) => props.height || `100%`};
+`;
+
 const Footer = () => {
-  return `Footer`;
+  return (
+    <FooterArea>
+      <FooterAreaTop>footer</FooterAreaTop>
+    </FooterArea>
+  );
 };
 
 export default Footer;

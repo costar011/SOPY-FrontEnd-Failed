@@ -29,7 +29,9 @@ const MM00Presenter = () => {
   return (
     <Wrapper>
       <Wrapper width={`500px`} height={`30px`} dr={`row`}>
-        <Wrapper al={`felx-end`} padding={`25px`}></Wrapper>
+        <Wrapper al={`felx-end`} padding={`25px`}>
+          <ImageBox width={`400px`} height={`230px`}></ImageBox>
+        </Wrapper>
       </Wrapper>
     </Wrapper>
   );

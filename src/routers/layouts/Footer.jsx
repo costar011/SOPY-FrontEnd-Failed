@@ -30,6 +30,23 @@ const FooterWrapper = styled.div`
   height: ${(props) => props.height || `100%`};
 `;
 
+const TextBox = styled.div`
+  width: 100%;
+  height: 5px;
+  margin: 10px;
+  padding: 20px;
+
+  align-items: center;
+  justify-content: flex-start;
+  transition: 0.4s;
+
+  &:hover {
+    font-weight: 700;
+  }
+`;
+
+const Text = styled.div``;
+
 const Footer = () => {
   return (
     <FooterArea>

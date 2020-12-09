@@ -50,7 +50,26 @@ const Text = styled.div``;
 const Footer = () => {
   return (
     <FooterArea>
-      <FooterAreaTop>footer</FooterAreaTop>
+      <FooterAreaTop>이용약관</FooterAreaTop>
+      <FooterAreaContent>
+        <FooterWrapper width={`450px`}>
+          <FooterWrapper width={`100%`} height={`50%`}>
+            로고 들어갈 자리.
+          </FooterWrapper>
+          <FooterWrapper width={`100%`} height={`50%`}>
+            <TextBox>
+              <Text>이름</Text>
+              <Text> : 예림</Text>
+            </TextBox>
+
+            <TextBox>
+              <Text>번호</Text>
+              <Text> : 010-1234-4567</Text>
+            </TextBox>
+          </FooterWrapper>
+        </FooterWrapper>
+        <FooterWrapper width={`100%`}>right</FooterWrapper>
+      </FooterAreaContent>
     </FooterArea>
   );
 };

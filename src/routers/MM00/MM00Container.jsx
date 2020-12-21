@@ -2,21 +2,20 @@ import React from "react";
 import MM00Presenter from "./MM00Presenter";
 
 const MM00Container = () => {
-    ////////   VARIABLE     ////////
+  ////////   VARIABLE     ////////
 
-    ////////   USE STATE    ////////
+  ////////   USE STATE    ////////
 
-    ////////   USE REF      ////////
+  ////////   USE REF      ////////
 
-    ////////   USE CONTEXT  ////////
+  ////////   USE CONTEXT  ////////
 
-    ////////   USE QUREY    ////////
+  ////////   USE QUREY    ////////
 
-    ////////   USE MUTATION ////////
-    
-    ////////   USE EFFECT   ////////
+  ////////   USE MUTATION ////////
 
-    return <MM00Presenter/>
+  ////////   USE EFFECT   ////////
 
-}
+  return <MM00Presenter />;
+};
 export default MM00Container;

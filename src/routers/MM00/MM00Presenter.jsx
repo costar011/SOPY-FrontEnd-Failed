@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Wrapper, ImageBox } from "../../components/commonComponent";
+import Fade from "react-reveal/Fade";
+import Bounce from "react-reveal/Bounce";
 
 const ViewText = styled.div`
   margin: 6px;
@@ -25,23 +27,38 @@ const WrapWrapper = styled(Wrapper)`
   flex-wrap: wrap; // width가 꽉 차면 자동으로 내려주는 애
 `;
 
-const MM00Presenter = () => {
+const MM00Presenter = ({ videoDatum }) => {
   return (
     <Wrapper>
-      <Wrapper width={`500px`} height={`30px`} dr={`row`}>
-        <Wrapper al={`felx-end`} padding={`25px`}>
-          <ImageBox
-            width={`400px`}
-            height={`230px`}
-            bgImg={`https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1693&q=80`}
-          ></ImageBox>
-        </Wrapper>
+      <Wrapper hidden={`400px`} padding={`25px`} dr={`row`}>
+        <Fade left>
+          <Wrapper al={`flex-end`} padding={`20px`}>
+            <ImageBox
+              width={`400px`}
+              height={`225px`}
+              bgImg={`https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80`}
+            />
+          </Wrapper>
+        </Fade>
+
+        <Fade right>
+          <Wrapper al={`flex-start`} padding={`20px`}>
+            <ViewText size={`20px`} weight={`700`} isTitle={true}>
+              Text 1
+            </ViewText>
+            <ViewText size={`12px`} weight={`400`} isTitle={true}>
+              Text 2
+            </ViewText>
+            <ViewText size={`13.5px`} weight={`500`} isTitle={true}>
+              Text 3
+            </ViewText>
+          </Wrapper>
+        </Fade>
       </Wrapper>
-      <Wrapper al={`flex-start`} padding={`20px`}>
-        wrapper
-        <ViewText size={`13.5px`} weight={`500`} isTitle={true}>
-          view
-        </ViewText>
+      <Wrapper>
+        <Bounce>
+          <BarWrapper />
+        </Bounce>
       </Wrapper>
     </Wrapper>
   );

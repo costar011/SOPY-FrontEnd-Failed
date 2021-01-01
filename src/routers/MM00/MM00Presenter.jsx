@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { Wrapper, ImageBox } from "../../components/commonComponent";
+import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 
@@ -15,7 +15,7 @@ const ViewText = styled.div`
 
 const BarWrapper = styled.div`
   width: 1350px;
-  height: 45px;
+  height: 35px;
   border-radius: 8px;
   background-color: ${(props) => props.theme.subThemeColor};
   box-shadow: ${(props) => props.theme.boxShadow};
@@ -59,6 +59,31 @@ const MM00Presenter = ({ videoDatum }) => {
         <Bounce>
           <BarWrapper />
         </Bounce>
+
+        <Fade bottom>
+          <WrapWrapper dr={`row`} margin={`0px 0px 100px 0px`}>
+            {videoDatum ? (
+              videoDatum.length === 0 ? (
+                <Wrapper>미디어 목록 없음</Wrapper>
+              ) : (
+                videoDatum.map((data, idx) => {
+                  return (
+                    <Fade bottom delay={idx * 60} key={idx}>
+                      <ImageBox
+                        width={`320px`}
+                        height={`180px`}
+                        margin={`5px`}
+                        bgImg={data.thumbnailPath}
+                      />
+                    </Fade>
+                  );
+                })
+              )
+            ) : (
+              <Wrapper>조회중 . . . </Wrapper>
+            )}
+          </WrapWrapper>
+        </Fade>
       </Wrapper>
     </Wrapper>
   );

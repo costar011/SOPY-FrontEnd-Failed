@@ -19,6 +19,12 @@ const RowWrapper = styled.div`
   justify-content: center;
 `;
 
+const Title = styled.h2`
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0px 0px 40px 0px;
+`;
+
 const MM05Presenter = () => {
   return (
     <Wrapper>

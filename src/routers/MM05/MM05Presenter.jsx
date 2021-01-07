@@ -11,8 +11,24 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
+const RowWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
 const MM05Presenter = () => {
-  return `Hello MM05`;
+  return (
+    <Wrapper>
+      <Typist
+        cursor={{
+          show: false,
+        }}
+      ></Typist>
+    </Wrapper>
+  );
 };
 
 export default MM05Presenter;

@@ -27,6 +27,30 @@ const WrapWrapper = styled(Wrapper)`
   flex-wrap: wrap; // width가 꽉 차면 자동으로 내려주는 애
 `;
 
+const FileInput = styled.input`
+  display: none;
+`;
+
+const FileLabel = styled.label`
+  width: 120px;
+  height: 25px;
+  line-height: 25px;
+  background-color: ${(props) => props.theme.checkColor};
+  color: #fff;
+  box-shadow: ${(props) => props.theme.boxShadow};
+  margin: 5px;
+  border-radius: ${(props) => props.theme.radius};
+  text-align: center;
+  cursor: pointer;
+`;
+
+const Image = styled.img`
+  width: 400px;
+  height: 400px;
+  border: 2px solid #777;
+  margin: 10px;
+  object-fit: cover;
+`;
 const MM00Presenter = ({ videoDatum }) => {
   return (
     <Wrapper>
@@ -36,7 +60,7 @@ const MM00Presenter = ({ videoDatum }) => {
             <ImageBox
               width={`400px`}
               height={`225px`}
-              bgImg={`https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80`}
+              bgImg={`https://images.unsplash.com/photo-1581472723648-909f4851d4ae?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80`}
             />
           </Wrapper>
         </Fade>
